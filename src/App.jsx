@@ -4,6 +4,9 @@ import { HelmetProvider } from "react-helmet-async";
 import Navigation from "./components/Navigation";
 import Footer from "./components/Footer";
 import HomePage from "./pages/HomePage";
+import BiographyPage from "./pages/BiographyPage";
+import CareerPage from "./pages/CareerPage";
+import PhilanthropyPage from "./pages/PhilanthropyPage";
 
 // create pages next - for now, placeholder
 // function HomePage() {
@@ -17,32 +20,32 @@ import HomePage from "./pages/HomePage";
 //   );
 // }
 
-function BiographyPage() {
-  return (
-    <div className="max-w-6xl mx-auto px-6 py-12">
-      <h1 className="font-serif text-4xl font-bold mb-6">Biography</h1>
-      <p>Biography page coming soon...</p>
-    </div>
-  );
-}
+// function BiographyPage() {
+//   return (
+//     <div className="max-w-6xl mx-auto px-6 py-12">
+//       <h1 className="font-serif text-4xl font-bold mb-6">Biography</h1>
+//       <p>Biography page coming soon...</p>
+//     </div>
+//   );
+// }
 
-function CareerPage() {
-  return (
-    <div className="max-w-6xl mx-auto px-6 py-12">
-      <h1 className="font-serif text-4xl font-bold mb-6">Career</h1>
-      <p>Career page coming soon...</p>
-    </div>
-  );
-}
+// function CareerPage() {
+//   return (
+//     <div className="max-w-6xl mx-auto px-6 py-12">
+//       <h1 className="font-serif text-4xl font-bold mb-6">Career</h1>
+//       <p>Career page coming soon...</p>
+//     </div>
+//   );
+// }
 
-function PhilanthropyPage() {
-  return (
-    <div className="max-w-6xl mx-auto px-6 py-12">
-      <h1 className="font-serif text-4xl font-bold mb-6">Philanthropy</h1>
-      <p>Philanthropy page coming soon...</p>
-    </div>
-  );
-}
+// function PhilanthropyPage() {
+//   return (
+//     <div className="max-w-6xl mx-auto px-6 py-12">
+//       <h1 className="font-serif text-4xl font-bold mb-6">Philanthropy</h1>
+//       <p>Philanthropy page coming soon...</p>
+//     </div>
+//   );
+// }
 
 function PoliticalPage() {
   return (

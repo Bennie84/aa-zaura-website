@@ -42,6 +42,228 @@ a:focus-visible {
   padding-inline: 0.5rem;
 }
 
+.biography-section {
+  margin-inline: 1.25rem;
+  padding-inline: 0.5rem;
+}
+
+.career-section {
+  margin-inline: 1.25rem;
+  padding-inline: 0.5rem;
+}
+
+.philanthropy-section {
+  margin-inline: 1.25rem;
+  padding-inline: 0.5rem;
+}
+
+.philanthropy-section h1 {
+  font-size: clamp(2.25rem, 5vw, 3.5rem);
+}
+
+.philanthropy-section h2 {
+  font-size: clamp(1.9rem, 4vw, 2.75rem);
+}
+
+.philanthropy-section h3 {
+  font-size: 1.35rem;
+}
+
+.philanthropy-section p {
+  font-size: 1rem;
+}
+
+.philanthropy-section > div {
+  padding-block: 0.5rem;
+}
+
+.philanthropy-card {
+  min-height: 100%;
+  padding: 2rem;
+  box-shadow: 0 8px 24px rgba(26, 26, 26, 0.06);
+}
+
+.philanthropy-cards {
+  gap: 3rem;
+  margin-top: 1rem;
+}
+
+.philanthropy-cta {
+  margin-bottom: 2.5rem;
+}
+
+.philanthropy-actions {
+  margin-top: 2.5rem;
+  gap: 1rem;
+}
+
+.philanthropy-button {
+  min-height: 3.25rem;
+  padding: 0.75rem 1.5rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.philanthropy-initiatives {
+  margin-inline: 1rem;
+}
+
+.philanthropy-initiative {
+  padding: 1.75rem 2rem;
+  background: rgba(255, 255, 255, 0.6);
+}
+
+.impact-cards {
+  max-width: 54rem;
+  gap: 2rem;
+  margin-inline: 1rem;
+  margin-top: 2rem;
+}
+
+.impact-card {
+  min-height: 100%;
+  padding: 1.5rem;
+}
+
+.impact-value {
+  display: inline-block;
+  padding: 0.5rem 0.8rem;
+  margin-bottom: 1rem;
+  border-radius: 0.5rem;
+  background: rgba(255, 255, 255, 0.7);
+  line-height: 1.2;
+  font-size: 1.5rem;
+}
+
+.career-section h1 {
+  font-size: clamp(2.25rem, 5vw, 3.5rem);
+}
+
+.career-section h2 {
+  font-size: clamp(1.9rem, 4vw, 2.75rem);
+}
+
+.career-section h3 {
+  font-size: 1.35rem;
+}
+
+.career-section p {
+  font-size: 1rem;
+}
+
+.career-section > div {
+  padding-block: 0.5rem;
+}
+
+.career-timeline-item {
+  padding-block: 1.5rem;
+  padding-inline-end: 2rem;
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.timeline-year {
+  min-width: 5.5rem;
+  padding: 0.7rem 1.1rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  line-height: 1.2;
+  flex-shrink: 0;
+}
+
+.career-cards {
+  gap: 3rem;
+  margin-top: 1rem;
+}
+
+.career-card {
+  min-height: 100%;
+  padding: 2rem;
+  box-shadow: 0 8px 24px rgba(26, 26, 26, 0.06);
+}
+
+.career-cta {
+  margin-bottom: 2.5rem;
+}
+
+.career-actions {
+  margin-top: 2.5rem;
+  gap: 1rem;
+}
+
+.career-button {
+  min-height: 3.25rem;
+  padding: 0.75rem 1.5rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.biography-card {
+  min-height: 100%;
+  padding: 2rem;
+  box-shadow: 0 8px 24px rgba(26, 26, 26, 0.06);
+}
+
+.biography-section h1 {
+  font-size: clamp(2.25rem, 5vw, 3.5rem);
+}
+
+.biography-section h2 {
+  font-size: clamp(1.9rem, 4vw, 2.75rem);
+}
+
+.biography-section h3 {
+  font-size: 1.35rem;
+}
+
+.biography-section p {
+  font-size: 1rem;
+}
+
+.biography-section > div {
+  padding-block: 0.5rem;
+}
+
+.biography-highlights {
+  gap: 3rem;
+  margin-top: 1rem;
+}
+
+.biography-cta {
+  margin-bottom: 2.5rem;
+}
+
+.biography-timeline-item {
+  padding-block: 1.5rem;
+  padding-inline-end: 2rem;
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.biography-note {
+  padding: 2.5rem;
+}
+
+.biography-actions {
+  margin-top: 2.5rem;
+  gap: 1rem;
+}
+
+.biography-button {
+  min-height: 3.25rem;
+  padding: 0.75rem 1.5rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-links a {
+  display: inline-block;
+  padding-block: 0.25rem;
+}
+
 .hero-actions {
   margin-top: 2.5rem;
   gap: 1rem;
@@ -82,6 +304,21 @@ a:focus-visible {
     padding-inline: 0.25rem;
   }
 
+  .biography-section {
+    margin-inline: 0.75rem;
+    padding-inline: 0.25rem;
+  }
+
+  .career-section {
+    margin-inline: 0.75rem;
+    padding-inline: 0.25rem;
+  }
+
+  .philanthropy-section {
+    margin-inline: 0.75rem;
+    padding-inline: 0.25rem;
+  }
+
   .hero-actions {
     margin-top: 2rem;
     gap: 0.875rem;
@@ -93,5 +330,68 @@ a:focus-visible {
 
   .intro-card {
     padding: 2rem;
+  }
+
+  .biography-card,
+  .biography-note {
+    padding: 2rem;
+  }
+
+  .biography-highlights {
+    gap: 2rem;
+  }
+
+  .career-cards {
+    gap: 2rem;
+  }
+
+  .career-card {
+    padding: 2rem;
+  }
+
+  .career-cta {
+    margin-bottom: 1.5rem;
+  }
+
+  .career-button {
+    width: 100%;
+  }
+
+  .philanthropy-card {
+    padding: 2rem;
+  }
+
+  .philanthropy-cards {
+    gap: 2rem;
+  }
+
+  .philanthropy-cta {
+    margin-bottom: 1.5rem;
+  }
+
+  .philanthropy-button {
+    width: 100%;
+  }
+
+  .philanthropy-initiatives,
+  .impact-cards {
+    margin-inline: 0.25rem;
+  }
+
+  .philanthropy-initiative,
+  .impact-card {
+    padding: 1.75rem;
+  }
+
+  .impact-cards {
+    gap: 2rem;
+  }
+
+  .biography-cta {
+    margin-bottom: 1.5rem;
+  }
+
+  .biography-button {
+    width: 100%;
   }
 }
