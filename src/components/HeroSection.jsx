@@ -2,8 +2,24 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { personData } from "../config/content";
+import ImageCarousel from "./ImageCarousel";
 
 export default function HeroSection() {
+  const heroImages = [
+    {
+      src: "/images/aa-zaura-profile1.jpeg",
+      alt: "Abdussalam Abdulkarim Zaura - Professional Portrait",
+    },
+    {
+      src: "/images/aa-zaura-profile2.jpeg",
+      alt: "Abdussalam Abdulkarim Zaura - Professional Portrait",
+    },
+    {
+      src: "/images/aa-zaura-profile3.jpeg",
+      alt: "Abdussalam Abdulkarim Zaura - Professional Portrait",
+    },
+  ];
+
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -103,17 +119,20 @@ export default function HeroSection() {
           animate="visible"
           className="flex justify-center md:mt-4"
         >
-          <div className="relative">
+          {/* <div className="relative">
             {/* Subtle background shape */}
-            <div className="absolute inset-0 bg-amber-700 rounded-2xl -z-10 blur-3xl opacity-10"></div>
-
-            {/* Image */}
-            <img
-              src="/images/aa-zaura-profile.jpeg"
+          {/* <div className="absolute inset-0 bg-amber-700 rounded-2xl -z-10 blur-3xl opacity-10"></div> */}
+          {/* Image */}
+          {/* <img
+              src="/images/aa-zaura-profile1.jpeg"
               alt="Abdussalam Abdulkarim Zaura"
               className="w-full max-w-sm rounded-2xl shadow-2xl object-cover"
-            />
-          </div>
+            /> */}
+          {/* </div>
+        </motion.div>
+      </div>
+    </section> */}{" "}
+          <ImageCarousel images={heroImages} />
         </motion.div>
       </div>
     </section>
