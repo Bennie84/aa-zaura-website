@@ -7,6 +7,9 @@ import HomePage from "./pages/HomePage";
 import BiographyPage from "./pages/BiographyPage";
 import CareerPage from "./pages/CareerPage";
 import PhilanthropyPage from "./pages/PhilanthropyPage";
+import PoliticalJourneyPage from "./pages/PoliticalJourneyPage";
+import TimelinePage from "./pages/TimelinePage";
+import ContactPage from "./pages/ContactPage";
 
 // create pages next - for now, placeholder
 // function HomePage() {
@@ -47,32 +50,32 @@ import PhilanthropyPage from "./pages/PhilanthropyPage";
 //   );
 // }
 
-function PoliticalPage() {
-  return (
-    <div className="max-w-6xl mx-auto px-6 py-12">
-      <h1 className="font-serif text-4xl font-bold mb-6">Political Journey</h1>
-      <p>Political Journey page coming soon...</p>
-    </div>
-  );
-}
+// function PoliticalPage() {
+//   return (
+//     <div className="max-w-6xl mx-auto px-6 py-12">
+//       <h1 className="font-serif text-4xl font-bold mb-6">Political Journey</h1>
+//       <p>Political Journey page coming soon...</p>
+//     </div>
+//   );
+// }
 
-function TimelinePage() {
-  return (
-    <div className="max-w-6xl mx-auto px-6 py-12">
-      <h1 className="font-serif text-4xl font-bold mb-6">Timeline</h1>
-      <p>Timeline page coming soon...</p>
-    </div>
-  );
-}
+// function TimelinePage() {
+//   return (
+//     <div className="max-w-6xl mx-auto px-6 py-12">
+//       <h1 className="font-serif text-4xl font-bold mb-6">Timeline</h1>
+//       <p>Timeline page coming soon...</p>
+//     </div>
+//   );
+// }
 
-function ContactPage() {
-  return (
-    <div className="max-w-6xl mx-auto px-6 py-12">
-      <h1 className="font-serif text-4xl font-bold mb-6">Contact</h1>
-      <p>Contact page coming soon...</p>
-    </div>
-  );
-}
+// function ContactPage() {
+//   return (
+//     <div className="max-w-6xl mx-auto px-6 py-12">
+//       <h1 className="font-serif text-4xl font-bold mb-6">Contact</h1>
+//       <p>Contact page coming soon...</p>
+//     </div>
+//   );
+// }
 
 export default function App() {
   return (
@@ -86,7 +89,10 @@ export default function App() {
               <Route path="/biography" element={<BiographyPage />} />
               <Route path="/career" element={<CareerPage />} />
               <Route path="/philanthropy" element={<PhilanthropyPage />} />
-              <Route path="/political-journey" element={<PoliticalPage />} />
+              <Route
+                path="/political-journey"
+                element={<PoliticalJourneyPage />}
+              />
               <Route path="/timeline" element={<TimelinePage />} />
               <Route path="/contact" element={<ContactPage />} />
             </Routes>

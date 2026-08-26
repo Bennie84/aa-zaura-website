@@ -57,6 +57,174 @@ a:focus-visible {
   padding-inline: 0.5rem;
 }
 
+.political-section {
+  margin-inline: 1.25rem;
+  padding-inline: 0.5rem;
+}
+
+.timeline-section,
+.contact-section {
+  margin-inline: 1.25rem;
+  padding-inline: 0.5rem;
+}
+
+.timeline-section h1,
+.contact-section h1 {
+  font-size: clamp(2.25rem, 5vw, 3.5rem);
+}
+
+.timeline-section h2,
+.contact-section h2 {
+  font-size: clamp(1.9rem, 4vw, 2.75rem);
+}
+
+.timeline-section h3,
+.contact-section h3 {
+  font-size: 1.35rem;
+}
+
+.timeline-section p,
+.contact-section p {
+  font-size: 1rem;
+}
+
+.timeline-section > div,
+.contact-section > div {
+  padding-block: 0.5rem;
+}
+
+.timeline-entries {
+  margin-inline: 1rem;
+}
+
+.timeline-card {
+  padding: 1.75rem;
+  box-shadow: 0 8px 24px rgba(26, 26, 26, 0.06);
+}
+
+.timeline-card .timeline-year {
+  min-width: auto;
+  width: fit-content;
+  background: #f3f0eb;
+  padding: 0.5rem 0.85rem;
+  border-radius: 999px;
+}
+
+.timeline-periods {
+  gap: 3rem;
+  margin-top: 1rem;
+}
+
+.timeline-period-card {
+  min-height: 100%;
+  padding: 2rem;
+  box-shadow: 0 8px 24px rgba(26, 26, 26, 0.06);
+}
+
+.timeline-cta {
+  margin-bottom: 2.5rem;
+}
+
+.timeline-actions {
+  margin-top: 2.5rem;
+  gap: 1rem;
+}
+
+.timeline-button {
+  min-height: 3.25rem;
+  padding: 0.75rem 1.5rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-cards {
+  gap: 3rem;
+  margin-bottom: 5rem;
+}
+
+.contact-card {
+  min-height: 100%;
+  padding: 2rem;
+  box-shadow: 0 8px 24px rgba(26, 26, 26, 0.06);
+}
+
+.contact-form {
+  gap: 2rem;
+}
+
+.contact-field {
+  min-height: 3.25rem;
+  padding: 0.85rem 1rem;
+}
+
+.contact-button {
+  min-height: 3.5rem;
+  margin-top: 0.5rem;
+}
+
+.contact-social {
+  margin-top: 2rem;
+  gap: 1.25rem;
+}
+
+.political-section h1 {
+  font-size: clamp(2.25rem, 5vw, 3.5rem);
+}
+
+.political-section h2 {
+  font-size: clamp(1.9rem, 4vw, 2.75rem);
+}
+
+.political-section h3 {
+  font-size: 1.35rem;
+}
+
+.political-section p {
+  font-size: 1rem;
+}
+
+.political-section > div {
+  padding-block: 0.5rem;
+}
+
+.political-timeline {
+  margin-inline: 1rem;
+}
+
+.political-timeline-item {
+  padding: 1.75rem 2rem;
+  background: rgba(255, 255, 255, 0.6);
+}
+
+.political-cards {
+  gap: 3rem;
+  margin-top: 1rem;
+}
+
+.political-card {
+  min-height: 100%;
+  padding: 2rem;
+  box-shadow: 0 8px 24px rgba(26, 26, 26, 0.06);
+}
+
+.political-cta {
+  margin-bottom: 2.5rem;
+}
+
+.political-actions {
+  margin-top: 2.5rem;
+  gap: 1rem;
+}
+
+.political-button {
+  min-height: 3.25rem;
+  padding: 0.75rem 1.5rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .philanthropy-section h1 {
   font-size: clamp(2.25rem, 5vw, 3.5rem);
 }
@@ -319,6 +487,17 @@ a:focus-visible {
     padding-inline: 0.25rem;
   }
 
+  .political-section {
+    margin-inline: 0.75rem;
+    padding-inline: 0.25rem;
+  }
+
+  .timeline-section,
+  .contact-section {
+    margin-inline: 0.75rem;
+    padding-inline: 0.25rem;
+  }
+
   .hero-actions {
     margin-top: 2rem;
     gap: 0.875rem;
@@ -371,6 +550,62 @@ a:focus-visible {
 
   .philanthropy-button {
     width: 100%;
+  }
+
+  .political-timeline {
+    margin-inline: 0.25rem;
+  }
+
+  .political-timeline-item,
+  .political-card {
+    padding: 1.5rem;
+  }
+
+  .political-cards {
+    gap: 2rem;
+  }
+
+  .political-cta {
+    margin-bottom: 1.5rem;
+  }
+
+  .political-button {
+    width: 100%;
+  }
+
+  .timeline-entries {
+    margin-inline: 0.25rem;
+  }
+
+  .timeline-period-card,
+  .timeline-card,
+  .contact-card {
+    padding: 1.5rem;
+  }
+
+  .timeline-periods {
+    gap: 2rem;
+  }
+
+  .timeline-cta {
+    margin-bottom: 1.5rem;
+  }
+
+  .timeline-button {
+    width: 100%;
+  }
+
+  .contact-cards {
+    gap: 2rem;
+    margin-bottom: 4rem;
+  }
+
+  .contact-form {
+    gap: 1.5rem;
+  }
+
+  .contact-social {
+    gap: 1rem;
   }
 
   .philanthropy-initiatives,
