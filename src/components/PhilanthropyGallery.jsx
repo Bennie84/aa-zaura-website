@@ -66,14 +66,14 @@ export default function PhilanthropyGallery({ images = [] }) {
               <motion.div
                 key={index}
                 variants={slideVariants[index % slideVariants.length]}
-                className="group relative rounded-lg overflow-hidden shadow-md hover:shadow-xl transition duration-300"
+                className="group relative transition duration-300"
               >
                 {/* Image Container */}
-                <div className="aspect-video md:aspect-square bg-gray-200 overflow-hidden">
+                <div className="bg-transparent">
                   <img
                     src={image.src}
                     alt={image.alt}
-                    className="w-full h-full object-cover group-hover:scale-105 transition duration-500"
+                    className="block w-full h-auto object-contain group-hover:scale-105 transition duration-500"
                   />
                 </div>
 

@@ -53,12 +53,13 @@ export default function CareerPage() {
 
       {/* Introduction Section */}
       <section className="career-section py-28 bg-white">
-        <div className="max-w-4xl mx-auto px-6">
+        <div className="career-intro max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-20 items-center">
           <motion.div
             variants={containerVariants}
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.3 }}
+            className="career-intro-copy"
           >
             <motion.p
               variants={itemVariants}
@@ -82,44 +83,18 @@ export default function CareerPage() {
               managing complex, multi-sector enterprises.
             </motion.p>
           </motion.div>
-        </div>
-      </section>
-
-      {/* Career Image Section */}
-      <section className="career-section py-28 bg-gray-50">
-        <div className="max-w-6xl mx-auto px-6">
           <motion.div
-            variants={containerVariants}
-            initial="hidden"
-            whileInView="visible"
+            initial={{ opacity: 0, x: 80 }}
+            whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, amount: 0.3 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+            className="career-feature-image mx-auto max-w-sm"
           >
-            <motion.h2
-              variants={itemVariants}
-              className="career-heading font-serif text-4xl md:text-5xl font-bold text-gray-900 mb-16 text-center"
-            >
-              Executive Leadership
-            </motion.h2>
-
-            <motion.div
-              variants={itemVariants}
-              className="relative rounded-2xl overflow-hidden shadow-2xl bg-gray-200 h-96 md:h-[500px]"
-            >
-              <img
-                src="/images/aa-zaura-profile1.jpeg"
-                alt="Abdussalam Abdulkarim Zaura - Executive Leadership"
-                className="w-full h-full object-cover"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
-            </motion.div>
-
-            <motion.p
-              variants={itemVariants}
-              className="text-center text-gray-600 mt-8 max-w-2xl mx-auto"
-            >
-              Abdussalam Abdulkarim Zaura leads multiple enterprises with
-              strategic vision and operational excellence
-            </motion.p>
+            <img
+              src="/images/aa-zaura-profile1.jpeg"
+              alt="Abdussalam Abdulkarim Zaura - Career and Business Leadership"
+              className="w-full h-auto object-contain"
+            />
           </motion.div>
         </div>
       </section>
@@ -430,8 +405,11 @@ export default function CareerPage() {
               Professional Achievements
             </motion.h2>
 
-            <div className="space-y-8">
-              <motion.div variants={itemVariants} className="flex gap-6">
+            <div className="career-achievements space-y-8">
+              <motion.div
+                variants={itemVariants}
+                className="career-achievement flex gap-6"
+              >
                 <div className="flex-shrink-0 w-12 h-12 flex items-center justify-center rounded-full bg-amber-700 text-white font-bold text-lg">
                   ✓
                 </div>
@@ -447,7 +425,10 @@ export default function CareerPage() {
                 </div>
               </motion.div>
 
-              <motion.div variants={itemVariants} className="flex gap-6">
+              <motion.div
+                variants={itemVariants}
+                className="career-achievement flex gap-6"
+              >
                 <div className="flex-shrink-0 w-12 h-12 flex items-center justify-center rounded-full bg-amber-700 text-white font-bold text-lg">
                   ✓
                 </div>
@@ -463,7 +444,10 @@ export default function CareerPage() {
                 </div>
               </motion.div>
 
-              <motion.div variants={itemVariants} className="flex gap-6">
+              <motion.div
+                variants={itemVariants}
+                className="career-achievement flex gap-6"
+              >
                 <div className="flex-shrink-0 w-12 h-12 flex items-center justify-center rounded-full bg-amber-700 text-white font-bold text-lg">
                   ✓
                 </div>
@@ -478,7 +462,10 @@ export default function CareerPage() {
                 </div>
               </motion.div>
 
-              <motion.div variants={itemVariants} className="flex gap-6">
+              <motion.div
+                variants={itemVariants}
+                className="career-achievement flex gap-6"
+              >
                 <div className="flex-shrink-0 w-12 h-12 flex items-center justify-center rounded-full bg-amber-700 text-white font-bold text-lg">
                   ✓
                 </div>

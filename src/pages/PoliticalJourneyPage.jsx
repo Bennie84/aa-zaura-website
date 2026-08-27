@@ -118,7 +118,7 @@ export default function PoliticalJourneyPage() {
               className="rounded-lg overflow-hidden shadow-lg bg-gray-200 h-72 sm:h-96"
             >
               <img
-                src="/images/aa-zaura-profile1.jpeg"
+                src="/images/political-img2.jpeg"
                 alt="Abdussalam Abdulkarim Zaura - Political Leadership"
                 className="w-full h-full object-cover"
               />
@@ -230,7 +230,7 @@ export default function PoliticalJourneyPage() {
               className="rounded-lg overflow-hidden shadow-lg bg-gray-200 h-72 sm:h-96 ml-auto"
             >
               <img
-                src="/images/aa-zaura-profile1.jpeg"
+                src="/images/youth-empower.jpeg"
                 alt="AA Zaura - Political Campaign and Engagement"
                 className="w-full h-full object-cover"
               />
@@ -389,7 +389,7 @@ export default function PoliticalJourneyPage() {
 
       {/* Political Approach Section */}
       <section className="political-section py-24 sm:py-28 bg-gray-50">
-        <div className="max-w-3xl mx-auto px-6 sm:px-8">
+        <div className="political-approach max-w-5xl mx-auto px-6 sm:px-8">
           <motion.div
             variants={containerVariants}
             initial="hidden"
@@ -433,6 +433,41 @@ export default function PoliticalJourneyPage() {
               influence and resources to drive national development and improve
               the quality of life for ordinary Nigerians.
             </motion.p>
+
+            <motion.div variants={itemVariants} className="political-read-more">
+              <div>
+                <h3>Why He Joined Politics</h3>
+                <p>
+                  In an interview with Leadership, A.A. Zaura explained that his
+                  desire to touch more lives and serve more people inspired his
+                  move into politics. He described public service as an
+                  extension of his philanthropic work through health, education,
+                  women, and youth empowerment initiatives.
+                </p>
+              </div>
+              <a
+                href="https://leadership.ng/i-joined-politics-to-touch-more-lives-a-a-zaura/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="political-read-more-link"
+              >
+                Read Full Article
+              </a>
+            </motion.div>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, x: 70 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true, amount: 0.3 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+            className="political-approach-image"
+          >
+            <img
+              src="/images/political-img.jpeg"
+              alt="Abdussalam Abdulkarim Zaura in public service"
+              className="w-full h-auto object-contain"
+            />
           </motion.div>
         </div>
       </section>

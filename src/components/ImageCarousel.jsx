@@ -53,7 +53,7 @@ export default function ImageCarousel({ images = [] }) {
       onMouseLeave={() => setAutoPlay(true)}
     >
       {/* Image container */}
-      <div className="relative h-96 md:h-[500px] lg:h-[600px] rounded-2xl overflow-hidden shadow-2xl bg-gray-200">
+      <div className="relative">
         <AnimatePresence mode="wait">
           <motion.div
             key={currentIndex}
@@ -61,18 +61,15 @@ export default function ImageCarousel({ images = [] }) {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.8 }}
-            className="absolute inset-0"
+            className="w-full"
           >
             <img
               src={images[currentIndex].src}
               alt={images[currentIndex].alt}
-              className="w-full h-full object-cover"
+              className="block w-full h-auto object-contain"
             />
           </motion.div>
         </AnimatePresence>
-
-        {/* Subtle background shape */}
-        <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent pointer-events-none"></div>
       </div>
 
       {/* Previous Button */}
