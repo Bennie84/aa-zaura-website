@@ -1,5 +1,7 @@
 // src/App.jsx
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { useLocation } from "react-router-dom";
+import { useEffect } from "react";
 import { HelmetProvider } from "react-helmet-async";
 import Navigation from "./components/Navigation";
 import Footer from "./components/Footer";
@@ -10,6 +12,18 @@ import PhilanthropyPage from "./pages/PhilanthropyPage";
 import PoliticalJourneyPage from "./pages/PoliticalJourneyPage";
 import TimelinePage from "./pages/TimelinePage";
 import ContactPage from "./pages/ContactPage";
+import AwardsPage from "./pages/AwardsPage";
+
+// ScrollToTop component
+function ScrollToTop() {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return null;
+}
 
 // create pages next - for now, placeholder
 // function HomePage() {
@@ -81,6 +95,7 @@ export default function App() {
   return (
     <HelmetProvider>
       <Router>
+        <ScrollToTop />
         <div className="flex flex-col min-h-screen">
           <Navigation />
           <main className="flex-grow">
@@ -95,6 +110,7 @@ export default function App() {
               />
               <Route path="/timeline" element={<TimelinePage />} />
               <Route path="/contact" element={<ContactPage />} />
+              <Route path="/awards" element={<AwardsPage />} />
             </Routes>
           </main>
           <Footer />

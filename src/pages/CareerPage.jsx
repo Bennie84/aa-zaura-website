@@ -91,7 +91,7 @@ export default function CareerPage() {
             className="career-feature-image mx-auto max-w-sm"
           >
             <img
-              src="/images/aa-zaura-profile1.jpeg"
+              src="/images/political-img2.jpeg"
               alt="Abdussalam Abdulkarim Zaura - Career and Business Leadership"
               className="w-full h-auto object-contain"
             />

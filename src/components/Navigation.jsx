@@ -170,6 +170,7 @@ export default function Navigation() {
     { label: "Political Journey", path: "/political-journey" },
     { label: "Timeline", path: "/timeline" },
     { label: "Contact", path: "/contact" },
+    { label: "Awards", path: "/awards" },
   ];
 
   return (

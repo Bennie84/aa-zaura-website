@@ -72,8 +72,8 @@ export default function PoliticalJourneyPage() {
       </section>
 
       {/* Introduction */}
-      <section className="political-section py-24 sm:py-28 bg-white">
-        <div className="max-w-3xl mx-auto px-6 sm:px-8">
+      <section className="political-section py-20 sm:py-24 bg-white">
+        <div className="max-w-4xl mx-auto px-6 sm:px-8">
           <motion.div
             variants={containerVariants}
             initial="hidden"
@@ -82,7 +82,7 @@ export default function PoliticalJourneyPage() {
           >
             <motion.p
               variants={itemVariants}
-              className="text-base sm:text-lg text-gray-700 leading-relaxed mb-6"
+              className="text-base sm:text-lg text-gray-700 leading-relaxed"
             >
               After establishing himself as a successful businessman and
               philanthropist, Abdussalam Abdulkarim Zaura entered the political
@@ -94,7 +94,7 @@ export default function PoliticalJourneyPage() {
 
             <motion.p
               variants={itemVariants}
-              className="text-base sm:text-lg text-gray-700 leading-relaxed"
+              className="mt-6 text-base sm:text-lg text-gray-700 leading-relaxed"
             >
               Zaura's political platform centers on four core pillars: youth
               empowerment, quality education, healthcare improvement, and
@@ -105,37 +105,8 @@ export default function PoliticalJourneyPage() {
         </div>
       </section>
 
-      {/* Image 1 - Slide from Left */}
-      <section className="political-section py-24 sm:py-28 bg-gray-50">
-        <div className="max-w-5xl mx-auto px-6 sm:px-8">
-          <motion.div
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, amount: 0.3 }}
-          >
-            <motion.div
-              variants={slideFromLeftVariants}
-              className="rounded-lg overflow-hidden shadow-lg bg-gray-200 h-72 sm:h-96"
-            >
-              <img
-                src="/images/political-img2.jpeg"
-                alt="Abdussalam Abdulkarim Zaura - Political Leadership"
-                className="w-full h-full object-cover"
-              />
-            </motion.div>
-
-            <motion.p
-              variants={itemVariants}
-              className="text-center text-gray-600 mt-6 text-sm"
-            >
-              Political leadership and community engagement
-            </motion.p>
-          </motion.div>
-        </div>
-      </section>
-
       {/* Political Timeline */}
-      <section className="political-section py-24 sm:py-28 bg-white">
+      <section className="political-section py-20 sm:py-24 bg-white">
         <div className="max-w-5xl mx-auto px-6 sm:px-8">
           <motion.div
             variants={containerVariants}
@@ -145,17 +116,17 @@ export default function PoliticalJourneyPage() {
           >
             <motion.h2
               variants={itemVariants}
-              className="font-serif text-3xl sm:text-4xl font-bold text-gray-900 mb-12"
+              className="font-serif text-3xl sm:text-4xl font-bold text-gray-900 mb-10 sm:mb-12"
             >
               Political Timeline
             </motion.h2>
 
-            <div className="political-timeline space-y-8">
+            <div className="political-timeline space-y-7 sm:space-y-8">
               {politicalCareer.map((event, idx) => (
                 <motion.div
                   key={idx}
                   variants={itemVariants}
-                  className="political-timeline-item border-l-4 border-amber-700 pl-6 py-5 hover:bg-gray-50 transition rounded-r-lg pr-6"
+                  className="political-timeline-item border-l-4 border-amber-700 pl-5 sm:pl-6 py-5 sm:py-6 hover:bg-gray-50 transition rounded-r-lg pr-5 sm:pr-6"
                 >
                   <div className="flex items-start justify-between mb-2 gap-4">
                     <div>
@@ -217,37 +188,8 @@ export default function PoliticalJourneyPage() {
         </div>
       </section>
 
-      {/* Image 2 - Slide from Right */}
-      <section className="political-section py-24 sm:py-28 bg-gray-50">
-        <div className="max-w-5xl mx-auto px-6 sm:px-8">
-          <motion.div
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, amount: 0.3 }}
-          >
-            <motion.div
-              variants={slideFromRightVariants}
-              className="rounded-lg overflow-hidden shadow-lg bg-gray-200 h-72 sm:h-96 ml-auto"
-            >
-              <img
-                src="/images/youth-empower.jpeg"
-                alt="AA Zaura - Political Campaign and Engagement"
-                className="w-full h-full object-cover"
-              />
-            </motion.div>
-
-            <motion.p
-              variants={itemVariants}
-              className="text-center text-gray-600 mt-6 text-sm"
-            >
-              Campaigning for change and national development
-            </motion.p>
-          </motion.div>
-        </div>
-      </section>
-
       {/* Political Vision & Values */}
-      <section className="political-section py-24 sm:py-28 bg-white">
+      <section className="political-section py-20 sm:py-24 bg-white">
         <div className="max-w-5xl mx-auto px-6 sm:px-8">
           <motion.div
             variants={containerVariants}
@@ -257,12 +199,12 @@ export default function PoliticalJourneyPage() {
           >
             <motion.h2
               variants={itemVariants}
-              className="font-serif text-3xl sm:text-4xl font-bold text-gray-900 mb-12"
+              className="font-serif text-3xl sm:text-4xl font-bold text-gray-900 mb-10 sm:mb-12"
             >
               Political Vision & Core Values
             </motion.h2>
 
-            <div className="political-cards grid grid-cols-1 md:grid-cols-2 gap-10">
+            <div className="political-cards grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
               {/* Youth Empowerment */}
               <motion.div
                 variants={itemVariants}
@@ -296,7 +238,7 @@ export default function PoliticalJourneyPage() {
               {/* Quality Education */}
               <motion.div
                 variants={itemVariants}
-                className="political-card p-8 bg-white border border-gray-200 rounded-lg hover:shadow-md transition"
+                className="political-card p-6 sm:p-7 bg-white border border-gray-200 rounded-xl hover:shadow-md transition"
               >
                 <div className="w-12 h-12 rounded-full bg-amber-100 flex items-center justify-center mb-6">
                   <svg
@@ -326,7 +268,7 @@ export default function PoliticalJourneyPage() {
               {/* Healthcare Improvement */}
               <motion.div
                 variants={itemVariants}
-                className="political-card p-8 bg-white border border-gray-200 rounded-lg hover:shadow-md transition"
+                className="political-card p-6 sm:p-7 bg-white border border-gray-200 rounded-xl hover:shadow-md transition"
               >
                 <div className="w-12 h-12 rounded-full bg-amber-100 flex items-center justify-center mb-6">
                   <svg
@@ -356,7 +298,7 @@ export default function PoliticalJourneyPage() {
               {/* Infrastructure Development */}
               <motion.div
                 variants={itemVariants}
-                className="political-card p-8 bg-white border border-gray-200 rounded-lg hover:shadow-md transition"
+                className="political-card p-6 sm:p-7 bg-white border border-gray-200 rounded-xl hover:shadow-md transition"
               >
                 <div className="w-12 h-12 rounded-full bg-amber-100 flex items-center justify-center mb-6">
                   <svg
@@ -387,8 +329,105 @@ export default function PoliticalJourneyPage() {
         </div>
       </section>
 
+      {/* Ruling Party Member Section */}
+      <section className="py-28 sm:py-40 bg-white">
+        <div className="political-card max-w-container mx-auto px-6 sm:px-8 lg:px-12">
+          <motion.div
+            variants={containerVariants}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.2 }}
+          >
+            <motion.h2
+              variants={itemVariants}
+              className="text-3xl sm:text-2l font-bold text-gray-900 mb-16"
+            >
+              Political Engagement & Party Leadership
+            </motion.h2>
+
+            {/* Main Text */}
+            <motion.div variants={itemVariants} className="mb-16 max-w-3xl">
+              <p className="text-lg sm:text-m text-gray-700 leading-relaxed">
+                A A Zaura is a bonafide ruling party member who garnered
+                millions of votes for President Bola Ahmed Tinubu's historic
+                victory in his constituency. His commitment to the All
+                Progressives Congress (APC) and grassroots mobilization has
+                demonstrated his ability to connect with voters and drive
+                electoral success while maintaining his vision for development
+                and democratic governance.
+              </p>
+            </motion.div>
+
+            {/* Two Column Image Grid */}
+            <div className=" image-card grid grid-cols-1 md:grid-cols-2 gap-11">
+              {/* Image 1 - Slide from Left */}
+              <motion.div
+                variants={{
+                  hidden: { opacity: 0, x: -100 },
+                  visible: {
+                    opacity: 1,
+                    x: 0,
+                    transition: { duration: 0.8, ease: "easeOut" },
+                  },
+                }}
+                className="rounded-lg overflow-hidden shadow-xl bg-gray-200 h-80 sm:h-96"
+              >
+                <img
+                  src="/images/pres-tinubu2.jpeg"
+                  alt="AA Zaura receiving recognition certificate"
+                  className="w-full h-full object-cover"
+                />
+              </motion.div>
+
+              {/* Image 2 - Slide from Right */}
+              <motion.div
+                variants={{
+                  hidden: { opacity: 0, x: 100 },
+                  visible: {
+                    opacity: 1,
+                    x: 0,
+                    transition: { duration: 0.8, ease: "easeOut" },
+                  },
+                }}
+                className="rounded-lg overflow-hidden shadow-xl bg-gray-200 h-80 sm:h-96 "
+              >
+                <img
+                  src="/images/pres-tinubu.jpeg"
+                  alt="AA Zaura engaging with political leaders and constituents"
+                  className="w-full h-full object-cover"
+                />
+              </motion.div>
+            </div>
+
+            {/* Supporting Text */}
+            <motion.div
+              variants={itemVariants}
+              className="mt-16 p-12 bg-gray-50 border border-gray-200 rounded-lg"
+            >
+              {/* <h3 className="text-2xl font-bold text-gray-900 mb-6">
+                Electoral Success & Grassroots Impact
+              </h3>
+              <p className="text-gray-700 text-base leading-relaxed mb-6">
+                Through strategic mobilization and genuine engagement with
+                communities, AA Zaura has proven his ability to translate
+                political vision into electoral victories. His support for
+                President Tinubu's agenda demonstrates his commitment to
+                progressive governance and national development.
+              </p>
+              <p className="text-gray-700 text-base leading-relaxed">
+                His work at the grassroots level strengthens the APC's
+                foundation in his constituency while advancing policies that
+                prioritize education, economic opportunity, healthcare, and
+                infrastructure development—core pillars of his political
+                philosophy.
+              </p> */}
+            </motion.div>
+          </motion.div>
+        </div>
+      </section>
+
       {/* Political Approach Section */}
-      <section className="political-section py-24 sm:py-28 bg-gray-50">
+      <section className="political-section py-20 sm:py-24 bg-gray-50">
         <div className="political-approach max-w-5xl mx-auto px-6 sm:px-8">
           <motion.div
             variants={containerVariants}
@@ -398,7 +437,7 @@ export default function PoliticalJourneyPage() {
           >
             <motion.h2
               variants={itemVariants}
-              className="font-serif text-3xl sm:text-4xl font-bold text-gray-900 mb-8"
+              className="font-serif text-3xl sm:text-4xl font-bold text-gray-900 mb-8 sm:mb-10"
             >
               Approach to Governance
             </motion.h2>
@@ -502,19 +541,19 @@ export default function PoliticalJourneyPage() {
             >
               <Link
                 to="/biography"
-                className="political-button bg-amber-700 hover:bg-amber-600 text-white px-8 py-3 rounded-lg font-semibold transition text-sm"
+                className="political-button bg-amber-700 hover:bg-amber-600 text-white px-9 py-3.5 rounded-xl font-semibold transition text-sm sm:text-[0.95rem]"
               >
                 Full Biography
               </Link>
               <Link
                 to="/career"
-                className="political-button border-2 border-white text-white hover:bg-white hover:text-gray-900 px-8 py-3 rounded-lg font-semibold transition text-sm"
+                className="political-button border-2 border-white text-white hover:bg-white hover:text-gray-900 px-9 py-3.5 rounded-xl font-semibold transition text-sm sm:text-[0.95rem]"
               >
                 Business Journey
               </Link>
               <Link
                 to="/philanthropy"
-                className="political-button border-2 border-white text-white hover:bg-white hover:text-gray-900 px-8 py-3 rounded-lg font-semibold transition text-sm"
+                className="political-button border-2 border-white text-white hover:bg-white hover:text-gray-900 px-9 py-3.5 rounded-xl font-semibold transition text-sm sm:text-[0.95rem]"
               >
                 Philanthropy
               </Link>

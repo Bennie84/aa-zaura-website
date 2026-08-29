@@ -693,7 +693,7 @@ a:focus-visible {
 }
 
 .political-section > div {
-  padding-block: 0.5rem;
+  padding-block: 1rem;
 }
 
 .political-timeline {
@@ -701,18 +701,18 @@ a:focus-visible {
 }
 
 .political-timeline-item {
-  padding: 1.75rem 2rem;
+  padding: 1.5rem 1.5rem;
   background: rgba(255, 255, 255, 0.6);
 }
 
 .political-cards {
-  gap: 3rem;
+  gap: 2rem;
   margin-top: 1rem;
 }
 
 .political-card {
   min-height: 100%;
-  padding: 2rem;
+  padding: 1.5rem 1.75rem;
   box-shadow: 0 8px 24px rgba(26, 26, 26, 0.06);
 }
 
@@ -727,8 +727,8 @@ a:focus-visible {
 }
 
 .political-button {
-  min-height: 3.25rem;
-  padding: 0.75rem 1.5rem;
+  min-height: 3.5rem;
+  padding: 0.9rem 1.8rem;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -1641,4 +1641,85 @@ a:focus-visible {
   .contact-card {
     padding: 1.5rem;
   }
+}
+/* Award section */
+.award-section {
+  margin: 10px 20px 12px;
+  border-radius: 5px;
+}
+.award-section h1 {
+  font-size: 30px;
+  letter-spacing: 1.5px;
+  margin-left: 10px;
+  padding: 10px;
+}
+
+.award-section p {
+  letter-spacing: 1.5px;
+  margin-left: 10px;
+  padding: 10px;
+  font-size: 18px;
+}
+
+.award-grid {
+  margin-top: 35px;
+}
+.award-grid h2 {
+  font-size: 25px;
+  font-weight: bold;
+  margin: 10px 10px 8px;
+}
+
+.award-grid div {
+  margin-top: 10px;
+  margin: 10px 10px 8px;
+}
+.award-card h3 {
+  padding: 20px;
+  font-size: 20px;
+}
+.award-card p {
+  padding: 10px;
+  margin-left: 2px;
+}
+
+.award-card span {
+  padding: 10px;
+}
+
+.award-action {
+  margin: 20px 20px 10px;
+  border-radius: 5px;
+}
+.award-action h2 {
+  padding: 10px;
+}
+.award-action p {
+  padding: 10px;
+}
+
+.award-button {
+  padding: 10px;
+  margin: 10px 10px 4px;
+}
+
+.award-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.award-image {
+  margin: 20px 20px 20px;
+}
+/* Political section  */
+.image-card {
+  margin: 20px 20px 20px;
+}
+.political-card h2 {
+  margin: 10px 10px 10px;
+}
+.political-card p {
+  line-height: 1.5;
+  font-size: 18px;
 }
