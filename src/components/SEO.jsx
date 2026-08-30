@@ -9,7 +9,7 @@ export default function SEO({
   type = "website",
 }) {
   const fullTitle = `${title}`;
-  const siteUrl = "https://aazaura.com";
+  const siteUrl = "https://aa-zaura.com";
 
   return (
     <Helmet>
